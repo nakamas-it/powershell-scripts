@@ -302,7 +302,7 @@ function Invoke-RemoteScript {
         [string]$BaseUrl,
 
         [Parameter(ValueFromRemainingArguments)]
-        [object[]]$PassthroughArgs
+        [object[]]$PassthroughArgs = @()
     )
 
     $scriptUrl = "$BaseUrl/$($ScriptInfo.path)"
