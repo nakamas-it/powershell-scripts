@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "repo": "https://github.com/nakamas-it/powershell-scripts",
+  "scripts": [
+    {
+      "name": "Get-DiskStorageReport",
+      "path": "Inventory/Get-DiskStorageReport.ps1",
+      "description": "Scans all drives and generates offline HTML reports: top folders, top files, file type breakdown, and a summary dashboard.",
+      "requiresAdmin": false,
+      "minPSVersion": "5.1",
+      "tags": ["inventory", "disk", "html", "report", "storage"]
+    },
+    {
+      "name": "Invoke-DiskCleanup",
+      "path": "Maintenance/Invoke-DiskCleanup.ps1",
+      "description": "Cleans common Windows cache and temp folders (browser caches, Teams, WER, prefetch, shader caches, and more). Supports dry-run, all-user mode, optional targets, and generates an HTML summary report.",
+      "requiresAdmin": false,
+      "minPSVersion": "5.1",
+      "tags": ["maintenance", "cleanup", "disk", "cache", "temp"]
+    },
+    {
+      "name": "Remove-StaleUserProfiles",
+      "path": "Maintenance/Remove-StaleUserProfiles.ps1",
+      "description": "Identifies and removes local user profiles inactive beyond a configurable threshold (default: 90 days). Supports -WhatIf dry-run, per-profile confirmation, custom username exclusions, and CSV reporting.",
+      "requiresAdmin": true,
+      "minPSVersion": "5.1",
+      "tags": ["maintenance", "profiles", "cleanup", "users", "stale"]
+    }
+  ]
+}
